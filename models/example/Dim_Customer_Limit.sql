@@ -1,1 +1,5 @@
-Select * from Dim_Customer limit 100
+{{ config (
+    materialized="table"
+)}}
+
+select * from Dim_Customer limit 100
